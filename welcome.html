@@ -30,17 +30,17 @@
 				}
 				.welcome {
 					display: block;
-					width: 70%;
-					padding: 4em 0; margin: 0 auto;
+					width: 80%;
+					padding: 2.5em 0; margin: 0 auto;
 					text-align: center;
 					list-style: none;
 				}
 				.welcome li {
 					display: inline-block;
 					width: auto;
-					padding: .3em; margin: 0;
+					padding: .25em; margin: 0;
 					text-align: center;
-					font-size: 18px;
+					font-size: 16px;
 					line-height: 24px;
 					color: gray !important;
 				}
@@ -58,20 +58,53 @@
 					color: white !important;
 					font-weight: 900;
 				}
-				.information {
+				ul.information {
 					padding: 0; margin: 0;
-					list-style: none;
+					list-style-type: none;
 				}
-				.information li {
-					display: inline-block;
-					width: 47%; height: 9em;
-					padding: .5em; margin: 1%;
+				ul.information h4 {
+					padding: .75em; margin: 0;
+					font-size: 16px;
+					text-transform: uppercase;
+					font-weight: 900;
+				}
+				ul.information > li {
+					display: inline-block; position: relative;
+					width: 47%; min-height: 9em;
+					padding: .5em 0 1em; margin: 1%;
 					border: 1px solid grey;
 					text-align: center;
+					vertical-align: middle;
 				}
-				.information h4 {
-					font-size: 18px;
-					text-transform: uppercase;
+				ul.information > li:nth-of-type(n+5) {
+					min-height: 11em;
+				}
+				ul.information li ul,
+				ul.information li ol {
+					display: block; position: relative;
+					width: 100%;
+					padding: 0 .5em; margin: 0;
+				}
+
+				ul.information li ol {
+					list-style-type: decimal;
+				}
+
+				ul.information li ul li,
+				ul.information li ol li {
+					display: block; position: relative;
+					padding: 0 1em; margin: 0;
+					text-align: left;
+					font-size: 13px;
+				}
+				ul.information li.wifi ul li {
+					display: block;
+					padding: 0 2em; margin: 0;
+					list-style: none;
+					font-family: monospace;
+					text-align: left;
+					font-weight: 900;
+					font-size: 18px !important;
 				}
 				small {
 					display: inline-block; position: absolute;
@@ -90,35 +123,90 @@
 		<h1>WordPressDC Training</h1>
 
 		<ul class="welcome">
+			<li>Welkom</li>
 			<li>أهلاً و سهل</li>
 			<li>Bienvenue</li>
+			<li>Բարի գալուստ</li>
 			<li>Willkommen</li>
+			<li>Ongi etorri</li>
 			<li>歡迎光臨</li>
+			<li>স্বাগতম</li>
 			<li>Καλώς Ορίσατε</li>
-			<li class="active">Welcome!</li>
 			<li>ようこそ</li>
 			<li>Bienvenido</li>
+			<li>Dobrodošli</li>
+			<li>Tervetuloa</li>
+			<li class="active">Welcome!</li>
 			<li>Ласкаво просимо</li>
+			<li>स्वागत</li>
 			<li>ברוך הבא</li>
+			<li>Zoo siab txais tos!</li>
 			<li>ยินดีต้อนรับ</li>
 			<li>Добро пожаловать</li>
 			<li>Hoan nghênh</li>
 			<li>Bonvenon</li>
+			<li>ຍິນດີຕ້ອນຮັບ</li>
+			<li>Selamat datang</li>
+			<li>Céad míle fáilte</li>
 		</ul>
 
 
 		<ul class="information">
-			<li><h4>Wifi</h4></li>
-			<li><h4>Organizers</h4></li>
-			<li><h4>Bathrooms</h4></li>
-			<li><h4>Exit</h4></li>
-			<li><h4>Goals</h4></li>
-			<li><h4>Schedule</h4></li>
+			<li class="wifi">
+				<h4>Wifi</h4>
+				<ul>
+					<li>name: Guest@Chief</li>
+					<li>pass: BeBrave*</li>
+				</ul>
+			</li>
+			<li>
+				<h4>Organizers & Teachers</h4>
+				<ul>
+					<li>Organizers: Casey - (715) 559-9465</li>
+					<li>Teachers: Solomon, Tara, Arthur, Kat, Chito, Sandy</li>
+				</ul>
+			</li>
+			<li>
+				<h4>Bathrooms</h4>
+				<ul>
+					<li>Next to the Main Elevators in Foyer</li>
+					<li>Should be unlocked</li>
+					<li>(if not, contact organizer)</li>
+				</ul>
+			</li>
+			<li>
+				<h4>Exits</h4>
+				<ol>
+					<li>Main Elevators in Foyer</li>
+					<li>Main Stairway in Foyer</li>
+					<li>Emergency Stairway in Supply Room</li>
+				</ol>
+			</li>
+			<li>
+				<h4>Goals</h4>
+				<ol>
+					<li>Practice asking gooder questions</li>
+					<li>Build confidence finding answers</li>
+					<li>Gain perspective with one-on-one training</li>
+					<li>Learn about WordPress with lesson plans</li>
+					<li>Create positive community environment</li>
+				</ol>
+			</li>
+			<li>
+				<h4>Schedule</h4>
+				<ul>
+					<li>6:00 - Arrive, eat, settle in the 'Comfort Zone'</li>
+					<li>6:15 - Opening Announcements</li>
+					<li>6:30 - Training!</li>
+					<li>7:45 - Closing Announcements</li>
+					<li>8:00 - Close</li>
+				</ul>
+			</li>
 		</ul>
 
 		<h3>Start! Complete the TODO list on page 3!</h3>
 
-		<small>WordPressDC Training - Welcome - v1.0 - 04.09.2016 - <a href="welcome.pdf">PDF Version</a></small>
+		<small>WordPressDC Training - Welcome - v1.0 - 04.10.2016 - <a href="welcome.pdf">PDF Version</a></small>
 		
 	</div>
 	
